@@ -12,6 +12,7 @@ namespace CaminhoPontes
         private const string INPUT_TESTES_2 = "4 9\n0 1 1\n0 3 4\n0 4 2\n1 2 5\n1 5 3\n2 5 5\n3 4 2\n3 5 5\n4 5 8";
 
         private const char SEPARADOR_PADRAO = ' ';
+        private const char SEPARADOR_LINHA_TESTES = '\n';
         private const int INDICE_VERTICE_ORIGEM = 0;
 
         private class Ponte
@@ -76,7 +77,7 @@ namespace CaminhoPontes
 
         private static List<Ponte> RetornarPontesTeste(out int quantidadePilares)
         {
-            var linhasTeste = INPUT_TESTES_1.Split('\n');
+            var linhasTeste = INPUT_TESTES_1.Split(SEPARADOR_LINHA_TESTES);
 
             var pontes = new List<Ponte>();
 
